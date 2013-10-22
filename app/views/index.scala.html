@@ -1,0 +1,49 @@
+@()
+
+<ul class="list-unstyled auctions">
+  <li class="auction">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <button type="button" class="btn btn-danger pull-right">Delete</button>
+        <h4>Product: $Amount (from Seller)</h4>
+        <div>
+          <div class="hasEnded">Ended</div>
+        </div>
+      </div>
+      <div class="panel-body">
+        <p>
+          Started at: StartDate, end at: EndDate
+        </p>
+        <p>
+          No offer yet. Be the first!
+        </p>
+        <p>
+          <a>
+            Already OffersLength offer(s)!!
+          </a>
+
+          <dl class="dl-horizontal">
+            <dt>Buyer</dt>
+            <dd>$Amount</dd>
+          </dl>
+        </p>
+      </div>
+      <div class="panel-footer">
+        <div>
+          <form class="form-inline" role="form">
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="input-group">
+                <span class="input-group-addon">$</span>
+                <input type="number" class="form-control" placeholder="How much?">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Make an offer!</button>
+          </form>
+        </div>
+        <div>
+          And the winner is... <span class="label">Winner</span>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
